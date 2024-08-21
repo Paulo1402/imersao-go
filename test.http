@@ -1,0 +1,32 @@
+### Get all books
+GET http://localhost:8080/books
+Accept: application/json
+
+### Add a new book
+POST http://localhost:8080/books
+Content-Type: application/json
+
+{
+  "title": "The Lord of the Rings",
+  "author": "J.R.R. Tolkien",
+  "isbn": "978-0618640157",
+  "publishedOn": "1954-07-29"
+}
+
+### Get book by ID
+GET http://localhost:8080/books/1
+Accept: application/json
+
+### Update book by ID
+PUT http://localhost:8080/books/1
+Content-Type: application/json
+
+{
+  "title": "The Lord of the Rings (Updated)",
+  "author": "J.R.R. Tolkien",
+  "isbn": "978-0618640157",
+  "publishedOn": "1954-07-29"
+}
+
+### Delete book by ID
+DELETE http://localhost:8080/books/1
