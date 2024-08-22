@@ -7,8 +7,8 @@ POST http://localhost:8080/books
 Content-Type: application/json
 
 {
-  "title": "The Lord of the Rings",
-  "author": "J.R.R. Tolkien",
+  "title": "Harry Potter and the Philosopher's Stone",
+  "author": "J.K. Rowling",
   "isbn": "978-0618640157",
   "publishedOn": "1954-07-29"
 }
