@@ -2,6 +2,7 @@ package main
 
 import (
 	"database/sql"
+	"fmt"
 	"gobooks/internal/cli"
 	"gobooks/internal/service"
 	"gobooks/internal/web"
@@ -37,5 +38,6 @@ func main() {
 	router.HandleFunc("PUT /books/{id}", bookHandlers.UpdateBook)
 	router.HandleFunc("DELETE /books/{id}", bookHandlers.DeleteBook)
 
+	fmt.Println("Server listening on port 8080")
 	http.ListenAndServe(":8080", router)
 }
